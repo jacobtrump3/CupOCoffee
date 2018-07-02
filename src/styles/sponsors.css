@@ -1,0 +1,12 @@
+.starbucks > a > img{
+    height: 380px;
+    margin-left:30%
+}
+
+.dunkin > a > img{
+    position: relative;
+    height: 300px;
+    top: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+}

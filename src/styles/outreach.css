@@ -1,0 +1,25 @@
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: blue;
+ }
+ .carousel-indicators li {
+     border-color: blue;
+ }
+ .carousel-indicators li.active {
+     background-color: blue;
+ }
+
+ ol li{
+     list-style-type: none;
+ }
+
+ .item > img{
+    max-height:400px;
+    margin:auto;
+
+ }
+ .item > h2{
+     color: rgb(50, 48, 48)
+
+ }
+

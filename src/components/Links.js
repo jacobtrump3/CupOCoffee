@@ -5,6 +5,7 @@ import Posts from './userPosts';
 import Outreach from './outreach';
 import Sponsors from './sponsors';
 import logo from '../images/CUPOCOFFEE_Logo.png';
+import '../styles/links.css'
 
 import App from '../App';
 
@@ -36,6 +37,7 @@ class Links extends Component{
                     <Route exact path='/posts' component={Posts} />
                     <Route exact path='/sponsors' component={Sponsors} />
                 </Switch>
+                <div className="internal-link-logos">
                     <h2>Check Us Out</h2>
                     <h4>What we offer</h4>
                     <br/>
@@ -61,6 +63,7 @@ class Links extends Component{
                         <hr />
                     
                     </div>
+                </div>
 
                 </div>
             </Router>
