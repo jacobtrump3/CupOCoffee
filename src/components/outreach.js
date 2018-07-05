@@ -1,4 +1,5 @@
 import React, { Component } from 'react' ;
+import {Helmet} from "react-helmet";
 import '../styles/outreach.css';
 import Cups_around_the_world from '../images/cups_around_the_world.jpg'
 import for_the_kids from '../images/for_the_kids.jpg'
@@ -7,10 +8,14 @@ class Outreach extends Component{
     render(){
         return(
         <div className="Outreach">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Coffee Changing Lives | Cups O' Coffee</title>
+            </Helmet>
             <h1><b>GLOBAL OUTREACH</b></h1><br/>
-            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-                <ol clasNames="carousel-indicators" >
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <div id="myCarousel" className="carousel slide text-center" data-ride="carousel">
+                <ol className="carousel-indicators" >
+                    <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
                 </ol>

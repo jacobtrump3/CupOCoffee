@@ -1,12 +1,18 @@
 .starbucks > a > img{
-    height: 380px;
-    margin-left:30%
+    width: 155%;
+    margin-left:-30%
 }
 
 .dunkin > a > img{
     position: relative;
-    height: 300px;
-    top: 30px;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 90%;
+    margin-top: 25%;
+    /* margin-left: 20%; */
+}
+
+.caribou > a > img{
+    position: relative;
+    width: 85%;
+    margin-top: 23%;
+    /* margin-left: 20%; */
 }

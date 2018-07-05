@@ -1,6 +1,6 @@
 .posts{
     position: relative;
-    left: 28%;
+    margin: auto;
 }
 
 .post{
@@ -10,7 +10,11 @@
     text-align: left;
     padding: 10px;
     border-radius: 15px;
-    margin: 30px
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 
 .content{
@@ -18,4 +22,12 @@
     border-radius: 10px;
     height: 100px;
     padding: 10px;
+}
+
+
+@media (max-width: 600px) 
+{
+    .post{
+        width: 100%;
+    }
 }

@@ -1,6 +1,35 @@
     
+
 .internal-link-logos{
     border-top: 2px solid black;
-    margin-top: 2%
-    
+    margin-top: 2% ;
 }
+
+.input-group{
+    margin:auto;
+}
+
+.header{
+    background-color: rgba(228, 228, 228, 1);
+    border-radius: 5px;
+    width: 100%;
+    align-content: center;
+    max-height:300px;
+}
+
+.App-logo{
+    width: 70%;
+}
+
+
+@media (max-width: 700px) 
+{
+    .App-logo{
+        width: 105%;
+    }
+    .header{
+        width:100%;
+        
+    }
+}
+

@@ -1,20 +1,6 @@
 
-.jumbotron{
-    height: 350px;
-    background-color: burlywood;
-    width:100%;
-}
 
-.App-logo{
-    height: 70%;
-}
-  
-
-.glyphicon-globe{
-    font-size: 100px;
-}
-
-.glyphicon-thumbs-up{
+.glyphicon{
     font-size: 100px;
 }
 
@@ -24,18 +10,17 @@
 }
 
 .about-us{
-    width: 70%;
+    width: 80%;
     position: relative;
-    left: 10%;
 }
 
-@media (max-width: 400px) 
-{
-    .App-logo
-    {
-        width: 350px;
-    }
-}
 .Welcome{
     background-image: "../images/aroma-aromatic-bean-261463.png";
+}
+
+h4{
+    font-size: 150%
+}
+p{
+    font-size: 120%;
 }
