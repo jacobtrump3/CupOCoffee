@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
-import { JSONLD, Generic} from "react-structured-data";
 import Starbucks from '../images/Starbucks.png';
 import Dunkin from '../images/Dunkin_donuts.png';
 import Caribou from '../images/Caribou_coffee.png';
@@ -20,12 +19,12 @@ class Sponsors extends Component{
                 <meta itemprop="url" content="http://www.dunkindonuts.com/"/> */}
                 <script type="application/ld+json">   
                     {
-                        "{\n"+
-                            "   '@context'" +": " + "'http://schema.org'" + ",\n" +
-                            "   '@type'" + ": " + "'LocalBusiness'" + ",\n" +
-                            "   'image'" + ": " + "'http://www.googleusercontent.com/static/media/Starbucks.777cdc75.png'" + ",\n" +
-                            "   q'url'" + ": " + "'http://www.starbucks.com/'\n" +
-                        "}"
+                        `{\n 
+                            @context: http://schema.org, \n 
+                            @type: LocalBusiness,\n
+                            image: http://www.googleusercontent.com/static/media/Starbucks.777cdc75.png, \n
+                            url: http://www.starbucks.com/ \n
+                        }`
 
                     }
                     {/* <JSONLD>
@@ -41,17 +40,17 @@ class Sponsors extends Component{
                 <div className="row center" itemScope itemType="http://schema.org/CafeOrCoffeeShop">
                     <div  className="col-lg-4 col-md-4 col-sm-4 col-xs-4 starbucks">
                         <a href={"http://starbucks.com"} itemProp="url"> 
-                            <img itemProp="logo" src={Starbucks}/>
+                            <img itemProp="logo" src={Starbucks} alt={"Starbucks Logo"}/>
                         </a>
                     </div>
                     <div  className="col-lg-4 col-md-4 col-sm-4 col-xs-4 dunkin">
                         <a href={"http://dunkindonuts.com"}> 
-                            <img src={Dunkin}/>
+                            <img src={Dunkin} alt={"Dunkin Donuts Logo"}/>
                         </a>
                     </div>
                     <div  className="col-lg-4 col-md-4 col-sm-4 col-xs-4 caribou">
                         <a href={"http://cariboucoffee.com"}> 
-                            <img src={Caribou}/>
+                            <img src={Caribou} alt={"Caribou Logo"}/>
                         </a>
                     </div>
                 </div>

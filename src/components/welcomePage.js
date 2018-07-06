@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import {Helmet} from "react-helmet";
-
-import { Link, Router } from 'react-router-dom';
 import '../styles/welcomePage.css';
 
 

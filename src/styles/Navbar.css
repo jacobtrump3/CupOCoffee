@@ -8,6 +8,22 @@
 }
 
 
-.navitem{
-    font-size: 2.2pc
+.navHeader{
+    font-size: 1.5pc;
+    margin-right: 3%;
+}
+
+
+
+.nav-bar-container{
+    width: 100%;
+    margin-left: -10%
+}
+
+@media (max-width: 1200px) 
+{
+    .navHeader{
+        font-size: 1.2pc;;
+        
+    }
 }

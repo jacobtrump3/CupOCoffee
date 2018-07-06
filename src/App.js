@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import Links from './components/Links';
+import DefaultEB from '../src/ErrorBoundaries/DefaultEB';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <div className="tint">
-          <Links /> 
+          <DefaultEB>
+            <Links /> 
+          </DefaultEB>
         </div>
       </div>
     );

@@ -23,16 +23,16 @@ class Outreach extends Component{
                 <div className="carousel-inner" role="listbox">
                     <div className="item active cups">
                         <h2>Cups Around the World</h2>
-                        <img src={Cups_around_the_world}/>
+                        <img src={Cups_around_the_world} alt={"Cups Around the world"}/>
                     </div>
                     <div className="item community">
                         <h2>In Our Local Community</h2>
-                        <img src={city}/>
+                        <img src={city} alt={"In Our Local Community"}/>
 
                     </div>
                     <div className="item kids">
                         <h2>For The Kids</h2>
-                        <img src={for_the_kids}/>
+                        <img src={for_the_kids} alt={"For the Kids"}/>
 
                     </div>
                 </div>

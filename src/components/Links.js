@@ -1,5 +1,4 @@
 import React, { Component } from 'react' 
-import {Helmet} from "react-helmet";
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import { PageHeader } from 'react-bootstrap';
 import Welcome  from './welcomePage';
@@ -8,10 +7,10 @@ import Outreach from './outreach';
 import Sponsors from './sponsors';
 import logo from '../images/CUPOCOFFEE_Logo.png';
 import Navigation from './Navbar';
+import AroundMe from './AroundMe';
 
 import '../styles/links.css'
 
-import App from '../App';
 
 
 class Links extends Component{
@@ -29,6 +28,7 @@ class Links extends Component{
                     <Route exact path='/outreach' component={Outreach} />
                     <Route exact path='/posts' component={Posts} />
                     <Route exact path='/sponsors' component={Sponsors} />
+                    <Route exact path='/AroundMe' component={AroundMe} />
                 </Switch>
                 <div className="internal-link-logos">
                     <h2>Check Us Out</h2>
