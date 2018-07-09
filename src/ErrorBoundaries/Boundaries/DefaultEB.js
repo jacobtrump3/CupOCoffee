@@ -3,12 +3,17 @@ import React, { Component } from 'react';
 class DefaultEB extends Component{
     constructor(props){
         super(props);
-        this.state = { hasError: false }
+        this.state = {
+            errorMessage: '',
+            hasError: false 
+        }
     }
 
     componentDidCatch(error,info){
-        this.setState({ hasError:true });
-        // logErrorToMyService(error,info);
+        this.setState({ 
+            hasError:true,
+            errorMessage:error.errorMessage
+        });
     }
     
     render(){

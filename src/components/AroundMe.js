@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Geocode from "react-geocode";
+import ErrorBoundary from "../ErrorBoundaries/Boundaries/ExampleErrorBoundary";
+import ErrorBoudaryTest from '../ErrorBoundaries/Boundaries/ErrorBoundaryTest';
 import '../styles/AroundMe.css'; 
 
 
@@ -26,28 +28,28 @@ class AroundMe extends Component {
   handleSubmit(){
     Geocode.setApiKey("AIzaSyBw4kSonEavFjSP5bi4kv9pqdlOJi--3JM");
     Geocode.enableDebug();
-    Geocode.fromAddress(
-      document.getElementById("street").value + " " + 
-      document.getElementById("city").value + " " + 
-      document.getElementById("zipcode").value
-    ).then(
-      response =>{
-        
-          this.setState({
-            lat: response.results[0].geometry.location.lat, 
-            lng: response.results[0].geometry.location.lng,
-            center:{
+      Geocode.fromAddress(
+        document.getElementById("street").value + " " + 
+        document.getElementById("city").value + " " + 
+        document.getElementById("zipcode").value
+      ).then(
+        response =>{
+          
+            this.setState({
               lat: response.results[0].geometry.location.lat, 
-              lng: response.results[0].geometry.location.lng
-          }});
-          document.getElementById("Enter_Your_Address").innerHTML="Coffee Shops Near You";
-        },
-      error => {
-        alert("YOU ENTERED AN INVALID ADDRESS")
-        console.log(document.getElementById("street").value);
-        console.error(error);
-      }
-    )
+              lng: response.results[0].geometry.location.lng,
+              center:{
+                lat: response.results[0].geometry.location.lat, 
+                lng: response.results[0].geometry.location.lng
+            }});
+            document.getElementById("Enter_Your_Address").innerHTML="Coffee Shops Near You";
+          },
+        error => {
+          alert("YOU ENTERED AN INVALID ADDRESS")
+          console.log(document.getElementById("street").value);
+          console.error(error);
+        }
+      )
   }
  
   render() {
@@ -63,19 +65,21 @@ class AroundMe extends Component {
             <div className="yourLocation" id="yourLocation"></div>
           </div>
         </div>
-        <div className="map">
-          
-          <GoogleMapReact
-            bootstrapURLKeys={{ key: "AIzaSyBw4kSonEavFjSP5bi4kv9pqdlOJi--3JM"}}
-            center={this.state.center}
-            defaultZoom={this.state.zoom}
-          >
-            <UserLocation
-              lat={this.state.lat}
-              lng={this.state.lng}
-              text={'YOU'}
-            />
-          </GoogleMapReact>
+          <div className="map">
+          <ErrorBoundary>
+            <ErrorBoudaryTest/>
+          </ErrorBoundary>
+              <GoogleMapReact
+                bootstrapURLKeys={{key: "AIzaSyBw4kSonEavFjSP5bi4kv9pqdlOJi--3JM"}}
+                center={this.state.center}
+                defaultZoom={this.state.zoom}
+              >
+                <UserLocation
+                  lat={this.state.lat}
+                  lng={this.state.lng}
+                  text={'YOU'}
+                />
+              </GoogleMapReact>
         </div>
       </div>
     );  

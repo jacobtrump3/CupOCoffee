@@ -14,16 +14,15 @@ class Sidebar extends Component{
               
               <Navbar.Collapse className="nav-bar-collapse">
                 <Nav className="nav-bar-container">
-                    <Link className="navHeader" to='/'>HOME </Link>
+                    <Link className="navHeader" to='/'>HOME</Link>
 
                     <Link className="navHeader" to='/outreach'>OUTREACH</Link>
 
                     <Link className="navHeader" to='/posts'>COMMUNITY</Link>
                 
                     <Link className="navHeader" to='/sponsors'>SPONSORS</Link>
-                 
                     <Link className="navHeader" to='./AroundMe'>NEAR YOU</Link>
-                </Nav>
+=                </Nav>
               </Navbar.Collapse>
             </Navbar>
         );

@@ -33,10 +33,8 @@ class Outreach extends Component{
                     <div className="item kids">
                         <h2>For The Kids</h2>
                         <img src={for_the_kids} alt={"For the Kids"}/>
-
                     </div>
                 </div>
-
                 <a className="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
                 <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                 <span className="sr-only">Previous</span>

@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import Links from './components/Links';
-import DefaultEB from '../src/ErrorBoundaries/DefaultEB';
+import DefaultEB from '../src/ErrorBoundaries/Boundaries/DefaultEB';
 import './App.css';
 
 class App extends Component {
