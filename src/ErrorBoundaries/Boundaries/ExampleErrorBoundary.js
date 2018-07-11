@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 
-class MapErrorBoundryContainer extends Component{
+class ExampleErrorBoundary extends Component{
     state = { 
         error: null,
         errorInfo: null
@@ -63,4 +63,4 @@ class MapErrorBoundryContainer extends Component{
     }
 }
 
-export default MapErrorBoundryContainer;
+export default ExampleErrorBoundary;
