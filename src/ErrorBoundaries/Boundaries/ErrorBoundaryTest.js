@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 class ErrorBoundaryTest extends Component {
  
-    state = { greeting: "TEST"};
     componentDidMount() {
       throw new Error("An error has occured in Error Boundary Test component!");
     }
