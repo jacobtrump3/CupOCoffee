@@ -6,9 +6,12 @@ import { Link } from 'react-router-dom';
 
 
 class ExampleErrorBoundary extends Component{
-    state = { 
-        error: null,
-        errorInfo: null
+    constructor(){
+        super();
+        this.state = { 
+            error: null,
+            errorInfo: null
+        }
     }
 
     componentDidCatch(error, errorInfo) {

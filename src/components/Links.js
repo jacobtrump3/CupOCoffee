@@ -19,8 +19,11 @@ class Links extends Component{
             <Router>
                 
                 <div className="container-fluid text-center">
-            <PageHeader className="header text-center"><Link to='/'>
-                <img src={logo} className="App-logo" alt="logo" /></Link>
+            <PageHeader className="header text-center">
+                <Link to='/'>
+                    {/* <div className="App-logo"> Cup O' Coffee </div> */}
+                <img src={logo} className="App-logo" alt="logo" />
+                </Link>
             </PageHeader>
             <Navigation className="nav-bar " />
                 <Switch>

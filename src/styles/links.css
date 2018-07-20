@@ -17,9 +17,18 @@
     max-height:300px;
 }
 
+
+/* .App-logo{
+    font-weight: 900;
+    font-size: 90pt;
+    font-family:"Arial Black", Gadget, sans-serif;
+    font-stretch:condensed;
+
+} */
 .App-logo{
     width: 70%;
 }
+
 
 
 @media (max-width: 700px) 
