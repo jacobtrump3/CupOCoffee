@@ -40,18 +40,18 @@ class Links extends Component{
                     <div className="row center" >
                         <div className="col-sm-3">
                         </div>
-                        <div  className="col-sm-2"><Link to='CupOCoffee/outreach'>
+                        <div  className="col-sm-2"><Link to='/outreach'>
                             <span className="glyphicon glyphicon-globe"></span>
                             <h4>GLOBAL OUTREACH</h4>
                             <p>See what Cup O coffee does in the community</p></Link>
                         </div>
-                        <div className="col-sm-2"><Link to='CupOCoffee/posts'>
+                        <div className="col-sm-2"><Link to='/posts'>
                             <span className="glyphicon glyphicon-thumbs-up"></span>
                             <h4>COMMUNITY</h4>
                             <p>See what the Cup O Coffee community is up to</p></Link>
                         </div>
                     
-                        <div className="col-sm-2"><Link to='CupOCoffee/sponsors'>
+                        <div className="col-sm-2"><Link to='/sponsors'>
                             <span className="glyphicon glyphicon-briefcase"></span>
                             <h4>SPONSORS</h4>
                             <p>See who we work with to get you the coffee you love</p></Link>
