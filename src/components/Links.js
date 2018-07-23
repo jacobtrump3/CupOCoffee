@@ -26,13 +26,13 @@ class Links extends Component{
                 </Link>
             </PageHeader>
             <Navigation className="nav-bar " />
-                <Switch>
+              
                     <Route exact path='/' component={Welcome} />
                     <Route path='/outreach' component={Outreach} />
                     <Route path='/posts' component={Posts} />
                     <Route path='/sponsors' component={Sponsors} />
                     <Route path='/AroundMe' component={AroundMe} />
-                </Switch>
+             
                 <div className="internal-link-logos">
                     <h2>Check Us Out</h2>
                     <h4>What we offer</h4>
