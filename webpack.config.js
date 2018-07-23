@@ -12,7 +12,7 @@ module.exports = {
                 test: /\.(ttf|woff2|eot|woff|png|jpg|gif)$/,
                 loader:'url-loader',
                 options: {
-                    limit: 10000
+                    limit: 50000
                 }
                     
                 

@@ -15,14 +15,14 @@ class Sidebar extends Component{
               
               <Navbar.Collapse className="nav-bar-collapse">
                 <Nav className="nav-bar-container">
-                    <Link className="navHeader" to= '/'>HOME</Link>
+                    <Link className="navHeader" to='CupOCoffee/'>HOME</Link>
 
-                    <Link className="navHeader" to='/outreach'>OUTREACH</Link>
+                    <Link className="navHeader" to='CupOCoffee/outreach'>OUTREACH</Link>
 
-                    <Link className="navHeader" to='/posts'>COMMUNITY</Link>
+                    <Link className="navHeader" to='CupOCoffee/posts'>COMMUNITY</Link>
                 
-                    <Link className="navHeader" to='/sponsors'>SPONSORS</Link>
-                    <Link className="navHeader" to='./AroundMe'>NEAR YOU</Link>
+                    <Link className="navHeader" to='CupOCoffee/sponsors'>SPONSORS</Link>
+                    <Link className="navHeader" to='CupOCoffee/AroundMe'>NEAR YOU</Link>
 =                </Nav>
               </Navbar.Collapse>
             </Navbar>

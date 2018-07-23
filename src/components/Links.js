@@ -27,11 +27,11 @@ class Links extends Component{
             </PageHeader>
             <Navigation className="nav-bar " />
                 <Switch>
-                    <Route exact path='/' component={Welcome} />
-                    <Route exact path='/outreach' component={Outreach} />
-                    <Route exact path='/posts' component={Posts} />
-                    <Route exact path='/sponsors' component={Sponsors} />
-                    <Route exact path='/AroundMe' component={AroundMe} />
+                    <Route exact path='CupOCoffee/' component={Welcome} />
+                    <Route exact path='CupOCoffee/outreach' component={Outreach} />
+                    <Route exact path='CupOCoffee/posts' component={Posts} />
+                    <Route exact path='CupOCoffee/sponsors' component={Sponsors} />
+                    <Route exact path='CupOCoffee/AroundMe' component={AroundMe} />
                 </Switch>
                 <div className="internal-link-logos">
                     <h2>Check Us Out</h2>
@@ -40,18 +40,18 @@ class Links extends Component{
                     <div className="row center" >
                         <div className="col-sm-3">
                         </div>
-                        <div  className="col-sm-2"><Link to='/outreach'>
+                        <div  className="col-sm-2"><Link to='CupOCoffee/outreach'>
                             <span className="glyphicon glyphicon-globe"></span>
                             <h4>GLOBAL OUTREACH</h4>
                             <p>See what Cup O coffee does in the community</p></Link>
                         </div>
-                        <div className="col-sm-2"><Link to='/posts'>
+                        <div className="col-sm-2"><Link to='CupOCoffee/posts'>
                             <span className="glyphicon glyphicon-thumbs-up"></span>
                             <h4>COMMUNITY</h4>
                             <p>See what the Cup O Coffee community is up to</p></Link>
                         </div>
                     
-                        <div className="col-sm-2"><Link to='/sponsors'>
+                        <div className="col-sm-2"><Link to='CupOCoffee/sponsors'>
                             <span className="glyphicon glyphicon-briefcase"></span>
                             <h4>SPONSORS</h4>
                             <p>See who we work with to get you the coffee you love</p></Link>
