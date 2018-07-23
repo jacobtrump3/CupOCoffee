@@ -27,7 +27,7 @@ class Links extends Component{
             </PageHeader>
             <Navigation className="nav-bar " />
               
-                    <Route exact path='/' component={Welcome} />
+                    <Route exact path='CupOCoffee/' component={Welcome} />
                     <Route path='/outreach' component={Outreach} />
                     <Route path='/posts' component={Posts} />
                     <Route path='/sponsors' component={Sponsors} />
