@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 class Sidebar extends Component{
 
     render() {
-      var path = "/CupOCoffee/"
+      var path = "/CupOCoffee"
         return(
             <Navbar inverse collapseOnSelect className="navbar">
               <Navbar.Header>
@@ -20,11 +20,11 @@ class Sidebar extends Component{
 
                     <Link className="navHeader" to={`${path}/outreach`}>OUTREACH</Link>
 
-                    <Link className="navHeader" to='/posts'>COMMUNITY</Link>
+                    <Link className="navHeader" to={`${path}/posts`}>COMMUNITY</Link>
                 
-                    <Link className="navHeader" to='/sponsors'>SPONSORS</Link>
+                    <Link className="navHeader" to={`${path}/sponsors`}>SPONSORS</Link>
 
-                    <Link className="navHeader" to='/AroundMe'>NEAR YOU</Link>
+                    <Link className="navHeader" to={`${path}/AroundMe`}>NEAR YOU</Link>
 =                </Nav>
               </Navbar.Collapse>
             </Navbar>

@@ -28,10 +28,10 @@ class Links extends Component{
             <Navigation className="nav-bar " />
               
                     <Route exact path='/CupOCoffee/' component={Welcome} />
-                    <Route path='/outreach' component={Outreach} />
-                    <Route path='/posts' component={Posts} />
-                    <Route path='/sponsors' component={Sponsors} />
-                    <Route path='/AroundMe' component={AroundMe} />
+                    <Route path='CupOCoffee/outreach' component={Outreach} />
+                    <Route path='CupOCoffee/posts' component={Posts} />
+                    <Route path='CupOCoffee/sponsors' component={Sponsors} />
+                    <Route path='CupOCoffee/AroundMe' component={AroundMe} />
              
                 <div className="internal-link-logos">
                     <h2>Check Us Out</h2>
