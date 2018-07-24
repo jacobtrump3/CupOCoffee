@@ -57,7 +57,6 @@ class PostPopup extends Component{
             localStorage.setItem("user-posts", posts)
         }
         
-        alert(localStorage.getItem("user-posts"));
         
         this.props.closePopup();
     }

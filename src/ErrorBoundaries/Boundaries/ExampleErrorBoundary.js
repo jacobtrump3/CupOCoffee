@@ -23,6 +23,8 @@ class ExampleErrorBoundary extends Component{
 
 
     render(){
+        var path = "/CupOCoffee"
+
         if(this.state.errorInfo) {
             return(
                 <div className="backdrop">
@@ -44,17 +46,19 @@ class ExampleErrorBoundary extends Component{
                                 please select one of the links below to visit a different part of the website 
                                 or select details to see what could have caused this issue.</h4>
                                 <div className="link">
-                                    <Link className="navHeader" to='/'>HOME</Link>
+                                <Link className="navHeader" to='/CupOCoffee/'>HOME</Link>
                                 </div>
                                 <div className="link">
-                                    <Link className="navHeader" to='/outreach'>OUTREACH</Link><br/>
+                                <Link className="navHeader" to={`${path}/outreach`}>OUTREACH</Link>
                                 </div>
                                 <div className="link">
-                                    <Link className="navHeader" to='/posts'>COMMUNITY</Link>
+                                <Link className="navHeader" to={`${path}/posts`}>COMMUNITY</Link>
                                 </div>
                                 <div className="link">
-                                    <Link className="navHeader" to='/sponsors'>SPONSORS</Link>
+                                <Link className="navHeader" to={`${path}/sponsors`}>SPONSORS</Link>
                                 </div>
+
+                    
                                 
                         </div>
                     </div>
